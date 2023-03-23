@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 50;
+    transition: 0.5s;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: cornflowerblue;
+    background-image: url(../Imagenes/atardeceroirtada.jpg);
+}
+
+header:hover {
+    color: white;
+
+}
+.logo {
+    max-width: 20rem;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #1c1c1c;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+
+ body {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    bottom: -18%;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../Imagenes/atardeceroirtada2.jpg);
+}
+
+
+ .iconoconteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+ }
+
+.icono {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px sh #000090;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    background-image: url(../Imagenes/face.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+.icono:hover {
+    background-color: #6495ed;
+    filter: invert(1);
+}
+
+.icono:nth-of-type(2){
+    background-image:url(../Imagenes/wsp.png) 
+}
+
+.icono:nth-of-type(3){
+    background-image:url(../Imagenes/ubiccacion.png)
+}
+
+.convos {
+    background-color: #6495ed;
+}
+
+/* INDEX */
+
+.galeria-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 500px;
+    padding: 10px;
+    grid-gap: 10px;
+}
+
+.galeria-item {
+    position: relative;
+}
+
+.galeria-img {
+    width: 100%;
+    height: 100%;
+    object-fit: 100%;
+}
+
+.galeria-titulo {
+    position: absolute;
+    font-size: 500%;
+    justify-content: center;
+    bottom: 0;
+    color: white;
+    text-shadow: 0 0 8px rgb(0, 0, 0, 0.8);
+    text-decoration: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    font-style: italic;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    top: 40%;
+}
+.galeria-titulo a {
+    text-decoration: none;
+    color: white;
+}
+
+.galeria-titulo a:hover {
+    text-decoration: underline;
+}
+ .galeria-item:nth-child(5) {
+    grid-column-start: span 2;
+}
+
+.galeria-item:nth-child(2) {
+   grid-row-start: span 3;
+}
+
+.galeria-item:nth-child(7) {
+    grid-row-start: span 2;
+ }
+ 
+
+/* PRODUCTO */
+.card {
+    display: flex;
+    display: inline-block;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* lista de productos */
+
+#card {
+    display: flex;
+    text-align: center;
+    
+}
+
+/* Quienes somos */
+
+#nosotros {
+    width: 70%;
+    margin: auto;
+    padding: 50px;
+    text-align: left;
+    font-size: x-large;
+    color: rgb(68, 68, 68);
+}
+
+#nosotros h2 {
+    color: cornflowerblue;
+}
+
+#tecnico h2 {
+    color: cornflowerblue;
+}
+
+#tecnico {
+    width: 70%;
+    margin: auto;
+    padding: 50px;
+    text-align: right;
+    font-size: x-large;
+    color: rgb(68, 68, 68);
+}
+
+/* Contacto */
+
+#donde {
+    text-align: center;
+    font-size: x-large;
+    color: cornflowerblue;
+    padding: 15px;
+}
+
+.sociales { 
+    width: 50%;
+    margin: auto;
+    padding: 5px;
+    text-align: left;
+    color: cornflowerblue;
+    text-decoration:underline
+}
+
+.link {
+    width: 40%;
+    margin: auto;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+}
+
+#mapa {
+    width: 40%;
+    margin: auto;
+    padding: 5px;
+    width: 300;
+    height: 200;
+}
+
+/* precios */
+
+.soli {
+    color: black;
+    margin: auto;
+    padding: 15px;
+    text-align: left;
+}
+
+.soli2 {
+    color: black;
+    margin: auto;
+    padding: 15px;
+    text-align: right;
+}
+
+#formulario {
+    border: 5px;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    display: block;
+    font-size: x-large;
+    background-color: rgb(187, 203, 231);
+    background-size: 100%;
+    left: 50%;
+}
+
+.contenedor {
+    border: 1px solid black;
+    background-color: rgb(182, 201, 238);
+    display: inline-block;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 550px) {
+    
+    footer {
+        padding: 3px;
+    }
+
+    .icono {
+        height: 30px;
+        width: 30px;
+        border-radius: 30px;
+    }
+
+    * {
+        font-size: small;
+    }
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+        z-index: ini;
+    }
+
+    .abrir-menu {
+        color: #1c1c1c;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        z-index: auto;
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: #ecececec;
+    }
+
+    #donde {
+        text-align: center;
+        position: relative;
+    }
+
+    .sociales {
+        text-align: center;
+        position: relative;   
+    }
+
+    #mapa {
+        display: flex;
+        align-items: center;
+    }
+
+    .link {
+        text-align: center;
+        position: relative;
+    }
+}
