@@ -9,40 +9,17 @@
     box-sizing: border-box;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem;
-    background-color: cornflowerblue;
-    background-image: url(../Imagenes/atardeceroirtada.jpg);
+/* HEADER */
+.navbar-brand:hover {
+    text-decoration: underline;
 }
 
-header:hover {
-    color: white;
-
-}
-.logo {
-    max-width: 20rem;
+.nav-link:hover {
+    text-decoration: underline;
+    animation: infinite;
 }
 
-.nav-list {
-    list-style-type: none;
-    display: flex;
-    gap: 1rem;
-}
-
-.nav-list li a {
-    text-decoration: none;
-    color: #1c1c1c;
-}
-
-.abrir-menu,
-.cerrar-menu {
-    display: none;
-}
-
-
+/* body */
  body {
     height: 100vh;
     width: 100%;
@@ -60,7 +37,6 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(../Imagenes/atardeceroirtada2.jpg);
 }
 
 

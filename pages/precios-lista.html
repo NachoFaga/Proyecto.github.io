@@ -13,20 +13,23 @@
 
 </head>
 <body>
-    <header>
-      <img class="logo" src="../Imagenes/mflogofondoheader.png" alt="Logo">
-      <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
-      <nav class="nav" id="nav">
-          <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
-          <ul class="nav-list">
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="../pages/quienes-somos.html">Quiénes somos</a></li>
-              <li><a href="../pages/productos.html">Productos</a></li>
-              <li><a href="../pages/precios-lista.html">Precios</a></li>
-              <li><a href="../pages/contacto.html">Contacto</a></li>
-          </ul>
-      </nav>
-    </header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <img src="../Imagenes/mflogofondoheader.png" class="w-25">
+        <div class="navbar-nav">
+          <a class="navbar-brand" href="./productos.html">Productos</a>
+          <a class="nav-link active" aria-current="page" href="./quienes-somos.html">Quienes Somos</a>
+          <a class="nav-link" href="./contacto.html">Contacto</a>
+          <a class="nav-link" href="./precios-lista.html">Precios</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
     <h2 class="soli">Solicitud de lista de precios</h2>
     <form class="row g-3 needs-validation" id="formulario" novalidate>
         <div class="soli">
